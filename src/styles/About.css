@@ -1,0 +1,145 @@
+.icons {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+hr {
+    width: 50px;
+    border-color: black;
+    border-width: 2px;
+    margin-top: 8px;
+}
+
+.skills {
+    max-width: 500px;
+    width: 100%
+}
+.skillsList {
+    box-sizing: border-box;
+   width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.skill {
+    width: inherit;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    height: 22px;
+}
+
+.skillsList  p {
+    width: 20%;
+    text-align: center;
+    background-color: #04c2c9;
+    color: white;
+    height: inherit;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+.bar {
+    width: 70%;
+    height: inherit;
+    background-color:  #00a1a7;
+}
+.reactBar {
+    width: 65%;
+    height: inherit;
+    background-color:  #00a1a7;
+}
+.javascriptBar {
+    width: 60%;
+    height: inherit;
+    background-color:  #00a1a7;
+}
+
+.designBar {
+    width: 40%;
+    height: inherit;
+    background-color:  #00a1a7;
+}
+
+
+.skillsList .skill span {
+    margin-left: auto;
+}
+
+.me img {
+    max-height: 300px;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.me {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutHeader h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.me p, h3 {
+    margin-top: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .about {
+        height: auto;
+        padding-top: 100px;
+    }
+
+    .skills {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+.icon {
+    color: #00a1a7;
+    font-size: calc(50px + 1.5vw);
+}

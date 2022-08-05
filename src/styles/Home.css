@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
+
+html {
+  font-size: calc(15px + 0.390625vw);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+body, textarea, button, input {
+  font-family: 'League Spartan', sans-serif;
+}
+
+#tsparticles {
+  height: 100vh;
+}
+
+
+
+.container {
+  display: inline-block;
+}
+.introduction {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+  top: 50%;
+  color: #fff;
+  transform: translate(0, -50%);
+}
+
+.typed-out{
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 2.5s steps(20, end) forwards, blink 0.75s step-end infinite;
+}
+
+.typed-out2{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing2 2.5s 2.5s steps(20, end) forwards, blink 0.75s step-end infinite;
+  }
+
+@keyframes typing {
+  0% {
+    width: 0;
+    border-right: 0.15em solid #04c2c9;
+  }
+  99.9% {
+    width: 100%;
+    border-right: 0.15em solid #04c2c9;
+  }
+  100% {
+    border: none;
+    width: 100%;
+  }
+}
+
+@keyframes typing2 {
+   0% {width: 0;
+    border-right: 0.15em solid #04c2c9;
+
+}
+   99.9% {width: 100%;
+    border-right: 0.15em solid #04c2c9;
+}
+
+  100% {width: 100%}
+  }
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #04c2c9;
+  }
+}
+
+
+
+.container2 {
+    display: inline-block
+}
+
+.portfolioBtn {
+  border: 2px solid #fff;
+  background: 0;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  gap: 8px;
+  font-size: 1.2rem;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.portfolioBtn:hover  {
+  background-color: #04c2c9;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: 2px solid #04c2c9;
+}
+
+.portfolioBtn:hover > .arrowIcon {
+  transform: rotate(90deg);
+  transition: all 0.25s ease-in;
+}
+
+@media only screen and (max-width: 600px) {
+  .typed-out , .typed-out2 {
+   font-size: 1.5rem;
+  }
+}
