@@ -72,7 +72,34 @@ const Portfolio = () => {
           <p className='projectDescription'>Utilizes open weather map API. Fetches weather report based on city name, app changes background depending on the time in a given location.</p>
         </div>
 
-        
+        <div className='project'>
+        <a href='https://shoppingcart101.netlify.app' target="_blank" rel="noopener noreferrer">
+
+          <img
+            className='projectImg'
+            src={require('../images/Ecommerce.png')}
+            alt='project'
+          />
+
+          </a>
+          <div className='name'>
+            <h3>Shopping Cart</h3>
+            <div className='projectLinks'>
+
+            <a href='https://github.com/Karanveer101/Shopping-Cart' target="_blank" rel="noopener noreferrer">
+            <button className='githubButton' type='button'>
+              <AiFillGithub className='githubIcon' />
+            </button>
+          </a>   
+          <a href='https://shoppingcart101.netlify.app' target="_blank" rel="noopener noreferrer">
+       
+            <button className='live'>LIVE</button>
+
+            </a>
+            </div>
+          </div>
+          <p className='projectDescription'>A shopping cart using react, local storage and css. Total cost of items and quantity of items are dynamically updated at checkout.</p>
+        </div>     
       </div>
     </div>
   );
