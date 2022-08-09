@@ -83,7 +83,7 @@ const Portfolio = () => {
 
           </a>
           <div className='name'>
-            <h3>Shopping Cart</h3>
+            <h3>SHOPPING CART</h3>
             <div className='projectLinks'>
 
             <a href='https://github.com/Karanveer101/Shopping-Cart' target="_blank" rel="noopener noreferrer">
