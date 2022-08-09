@@ -142,13 +142,13 @@ function Contact(props) {
         </button>
         <div className='socialMedia'>
 
-        <a href='https://www.linkedin.com/in/karanveer-dhammu-4955b113b/' target="_blank" rel="noopener noreferrer">
+        {/* <a href='https://www.linkedin.com/in/karanveer-dhammu-4955b113b/' target="_blank" rel="noopener noreferrer">
 
           <button>
             <AiFillLinkedin className='linkedInIcon' />
           </button>
 
-          </a>
+          </a> */}
           <a href='https://github.com/Karanveer101' target="_blank" rel="noopener noreferrer">
             <button type='button'>
               <AiFillGithub className='githubIcon' />
