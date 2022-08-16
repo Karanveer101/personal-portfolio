@@ -142,7 +142,7 @@ function Contact(props) {
         </button>
         <div className='socialMedia'>
 
-        <a href='www.linkedin.com/in/karanveer-dhammu' target="_blank" rel="noopener noreferrer">
+        <a href='https://www.linkedin.com/in/karanveer-dhammu/' target="_blank" rel="noopener noreferrer">
 
           <button>
             <AiFillLinkedin className='linkedInIcon' />
