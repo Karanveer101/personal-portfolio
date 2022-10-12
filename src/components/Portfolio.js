@@ -45,14 +45,54 @@ const Portfolio = () => {
             </div>
           </div>
           <p className='projectDescription'>
-            A responsive youtube clone react application using css and a
-            functional search feature implemented using youtube data api.
-            Homepage renders the most popular videos.
+            A responsive youtube application with a fully functional search
+            feature where users can watch videos ad free. The app utilizes
+            youtube data API to search and list popular videos.
+          </p>
+        </div>
+
+        <div className='project'>
+          <a
+            href='https://clipshare12.netlify.app'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <img
+              className='projectImg'
+              src={require('../images/clipShare.png')}
+              alt='project'
+            />
+          </a>
+          <div className='name'>
+            <h3>Clip Share</h3>
+            <div className='projectLinks'>
+              <a
+                href='https://github.com/Karanveer101/tiktok-clone'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <button className='githubButton' type='button'>
+                  <AiFillGithub className='githubIcon' />
+                </button>
+              </a>
+              <a
+                href='https://clipshare12.netlify.app/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <button className='live'>LIVE</button>
+              </a>
+            </div>
+          </div>
+          <p className='projectDescription'>
+            A social media app where users can login to their profile and share
+            videos. The app utilizes NoSQL database (firebase) to store and
+            display user data.
           </p>
         </div>
         <div className='project'>
           <a
-            href='https://graceful-cocada-d7936c.netlify.app/'
+            href='https://tracklink.netlify.app'
             target='_blank'
             rel='noopener noreferrer'
           >
@@ -63,7 +103,7 @@ const Portfolio = () => {
             />
           </a>
           <div className='name'>
-            <h3>PROJECT LIST TRACKER</h3>
+            <h3>TrackLink</h3>
             <div className='projectLinks'>
               <a
                 href='https://github.com/Karanveer101/Project-List-Tracker'
@@ -75,7 +115,7 @@ const Portfolio = () => {
                 </button>
               </a>
               <a
-                href='https://graceful-cocada-d7936c.netlify.app/'
+                href='https://tracklink.netlify.app'
                 target='_blank'
                 rel='noopener noreferrer'
               >
@@ -84,9 +124,9 @@ const Portfolio = () => {
             </div>
           </div>
           <p className='projectDescription'>
-            An advanced to do list application with vanilla javascript. Utilizes
-            local storage, tracks the number of incomplete tasks, and deletes
-            completed tasks.
+            Users can add projects they are working on and list specific tasks
+            for each project on the list. They can then see the number of tasks
+            remaining to help them stay organized and on track for each project.
           </p>
         </div>
 
@@ -103,7 +143,7 @@ const Portfolio = () => {
             />
           </a>
           <div className='name'>
-            <h3>WEATHER APP</h3>
+            <h3>DISPLAY WEATHER APP</h3>
             <div className='projectLinks'>
               <a
                 href='https://github.com/Karanveer101/Weather-App'
@@ -124,9 +164,9 @@ const Portfolio = () => {
             </div>
           </div>
           <p className='projectDescription'>
-            Utilizes open weather map API. Fetches weather report based on city
-            name, app changes background depending on the time in a given
-            location.
+            Utilizes open weather map API integraion. Fetches weather report
+            based on city name, app changes background depending on the time in
+            a given location.
           </p>
         </div>
 
@@ -143,7 +183,7 @@ const Portfolio = () => {
             />
           </a>
           <div className='name'>
-            <h3>SHOPPING CART</h3>
+            <h3>Fruit Basket</h3>
             <div className='projectLinks'>
               <a
                 href='https://github.com/Karanveer101/Shopping-Cart'
@@ -164,8 +204,9 @@ const Portfolio = () => {
             </div>
           </div>
           <p className='projectDescription'>
-            A shopping cart using react, local storage and css. Total cost of
-            items and quantity of items are dynamically updated at checkout.
+            A fruit basket is a shopping cart built with react, local storage
+            and css. The total cost of items and quantity of items are
+            dynamically updated at checkout.
           </p>
         </div>
       </div>

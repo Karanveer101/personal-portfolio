@@ -6,7 +6,7 @@ import '../styles/About.css';
 import 'animate.css';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll';
 
 function About(props) {
   const variant = {
@@ -17,7 +17,7 @@ function About(props) {
   const photoVariant = {
     visible4: { x: 0, opacity: 1 },
     hidden: { x: 200, opacity: 0 },
-  }
+  };
 
   const iconVariant = {
     visible: { opacity: 1 },
@@ -96,52 +96,49 @@ function About(props) {
         ></motion.hr>
       </section>
       <div className='icons'>
-          <motion.div
-            variants={iconVariant}
-            initial='hidden'
-            animate={animation}
-            transition={{ delay: 0.7 }}
-          >
-            <SiFastly className='icon' />
-            <h3>Fast</h3>
-            <p>
-              Fast load times and lag free interaction, my highest priority.
-            </p>
-          </motion.div>
-          <motion.div
-            variants={iconVariant}
-            initial='hidden'
-            animate={animation}
-            transition={{ delay: 0.9 }}
-          >
-            <FaMobile className='icon' />
-            <h3>Responsive</h3>
-            <p>My layouts will work on any device, big or small.</p>
-          </motion.div>
-          <motion.div
-            variants={iconVariant}
-            initial='hidden'
-            animate={animation}
-            transition={{ delay: 1.1 }}
-          >
-            <FaRocket className='icon' />
-            <h3>Dynamic</h3>
-            <p>
-              Websites don't have to be static, I love making pages come to
-              life.
-            </p>
-          </motion.div>
+        <motion.div
+          variants={iconVariant}
+          initial='hidden'
+          animate={animation}
+          transition={{ delay: 0.7 }}
+        >
+          <SiFastly className='icon' />
+          <h3>Fast</h3>
+          <p>Fast load times and lag free interaction, my highest priority.</p>
+        </motion.div>
+        <motion.div
+          variants={iconVariant}
+          initial='hidden'
+          animate={animation}
+          transition={{ delay: 0.9 }}
+        >
+          <FaMobile className='icon' />
+          <h3>Responsive</h3>
+          <p>My layouts will work on any device, big or small.</p>
+        </motion.div>
+        <motion.div
+          variants={iconVariant}
+          initial='hidden'
+          animate={animation}
+          transition={{ delay: 1.1 }}
+        >
+          <FaRocket className='icon' />
+          <h3>Dynamic</h3>
+          <p>
+            Websites don't have to be static, I love making pages come to life.
+          </p>
+        </motion.div>
 
-          <motion.div
-            variants={iconVariant}
-            initial='hidden'
-            animate={animation}
-            transition={{ delay: 1.3 }}
-          >
-            <BsFillLightbulbFill className='icon'/>
-            <h3>Intuitive</h3>
-            <p>Strong preference for easy to use, intuitive UX/UI.</p>
-          </motion.div>
+        <motion.div
+          variants={iconVariant}
+          initial='hidden'
+          animate={animation}
+          transition={{ delay: 1.3 }}
+        >
+          <BsFillLightbulbFill className='icon' />
+          <h3>Intuitive</h3>
+          <p>Strong preference for easy to use, intuitive UX/UI.</p>
+        </motion.div>
       </div>
       <div className='flex'>
         <section className='skills' ref={ref2}>
@@ -238,18 +235,26 @@ function About(props) {
             </li>
           </ul>
         </section>
-        <motion.section ref={ref3}  variants={photoVariant}
-                initial='hidden'
-                animate={animation}
-                transition={{ delay: 1.5 }}className='me'>
-          <img src={require('../images/me.JPG')} alt='person'></img>
+        <motion.section
+          ref={ref3}
+          variants={photoVariant}
+          initial='hidden'
+          animate={animation}
+          transition={{ delay: 1.5 }}
+          className='me'
+        >
+          <img src={require('../images/myPhoto.jpeg')} alt='person'></img>
           <h3>Who am I?</h3>
           <p>
-            Hi, I am Karanveer. I am very passionate about animations and UI effects as well as creating
-            intuitive and dynamic user experiences.
+            Creative, detail-oriented, software engineer with a deep interest in
+            AI. Proven track record of creating and implementing successful
+            front and back end web applications.
           </p>
-          <Link to='contact' spy={true} smooth={true} duration={500}> <a href='#contact'>Let's create something special.</a>
- </Link>       </motion.section>
+          <Link to='contact' spy={true} smooth={true} duration={500}>
+            {' '}
+            <a href='#contact'>Let's create something special.</a>
+          </Link>{' '}
+        </motion.section>
       </div>
     </div>
   );
