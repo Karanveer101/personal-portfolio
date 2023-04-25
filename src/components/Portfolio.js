@@ -53,6 +53,84 @@ const Portfolio = () => {
 
         <div className='project'>
           <a
+            href='https://playrock-paper-scissors.netlify.app/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <img
+              className='projectImg'
+              src={require('../images/rock-paper-scissors.png')}
+              alt='project'
+            />
+          </a>
+          <div className='name'>
+            <h3>Rock-Paper-Scissors</h3>
+            <div className='projectLinks'>
+              <a
+                href='https://github.com/Karanveer101/rock-paper-scissors'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <button className='githubButton' type='button'>
+                  <AiFillGithub className='githubIcon' />
+                </button>
+              </a>
+              <a
+                href='https://playrock-paper-scissors.netlify.app/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <button className='live'>LIVE</button>
+              </a>
+            </div>
+          </div>
+          <p className='projectDescription'>
+            A rock paper scissors game using javascript and advanced css
+            animations.
+          </p>
+        </div>
+
+        <div className='project'>
+          <a
+            href='https://nimble-baklava-d3673f.netlify.app/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <img
+              className='projectImg'
+              src={require('../images/project-tracker-app.png')}
+              alt='project'
+            />
+          </a>
+          <div className='name'>
+            <h3>Project Time Tracker</h3>
+            <div className='projectLinks'>
+              <a
+                href='https://github.com/Karanveer101/project-tracker'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <button className='githubButton' type='button'>
+                  <AiFillGithub className='githubIcon' />
+                </button>
+              </a>
+              <a
+                href='https://nimble-baklava-d3673f.netlify.app/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <button className='live'>LIVE</button>
+              </a>
+            </div>
+          </div>
+          <p className='projectDescription'>
+            A fun little personal app that I built for myself to estimate and
+            track how much time it takes me to complete my projects.
+          </p>
+        </div>
+
+        <div className='project'>
+          <a
             href='https://clipshare12.netlify.app'
             target='_blank'
             rel='noopener noreferrer'
