@@ -28,7 +28,7 @@ const Home = () => {
         </div>
         <br></br>
         <div className='container2'>
-          <h1 className='typed-out2'>I'm a front end developer.</h1>
+          <h1 className='typed-out2'>I'm a Full Stack Developer.</h1>
         </div>
         <br></br>
 
