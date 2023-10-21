@@ -7,10 +7,51 @@ const Portfolio = () => {
     return (
         <div className='portfolio'>
             <section className='portfolioHeader'>
-                <h1 className='projectTitle'>PROJECTS</h1>
+                <h1 className='projectTitle'>RECENT PROJECTS</h1>
                 <hr></hr>
             </section>
             <div className='projectContainer'>
+                <div className='project'>
+                    <a
+                        href='https://wagging-hearts-client.onrender.com/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        <img
+                            className='projectImg'
+                            src={require("../images/wagging-hearts.png")}
+                            alt='project'
+                        />
+                    </a>
+                    <div className='name'>
+                        <h3>Wagging Hearts</h3>
+                        <div className='projectLinks'>
+                            <a
+                                href='https://github.com/Karanveer101/wagging-hearts'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
+                                <button className='githubButton' type='button'>
+                                    <AiFillGithub className='githubIcon' />
+                                </button>
+                            </a>
+                            <a
+                                href='https://wagging-hearts-client.onrender.com/'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
+                                <button className='live'>LIVE</button>
+                            </a>
+                        </div>
+                    </div>
+                    <p className='projectDescription'>
+                        Searching for your ideal canine companion? Discover the
+                        perfect dog that matches your criteria. Mark favorites,
+                        identify top matches, and manage your adoption inquiries
+                        seamlessly through an interactive dashboard.
+                    </p>
+                </div>
+
                 <div className='project'>
                     <a
                         href='https://finddog.netlify.app/'
@@ -63,7 +104,7 @@ const Portfolio = () => {
                         />
                     </a>
                     <div className='name'>
-                        <h3>Youtube Clone</h3>
+                        <h3>Ad Free Youtube</h3>
                         <div className='projectLinks'>
                             <a
                                 href='https://github.com/Karanveer101/youtube-clone'
@@ -84,13 +125,12 @@ const Portfolio = () => {
                         </div>
                     </div>
                     <p className='projectDescription'>
-                        A responsive youtube application with a fully functional
-                        search feature where users can watch videos ad free. The
-                        app utilizes youtube data API to search and list popular
-                        videos.
+                        Tired of ads on youtube? Enjoy your favorite videos,
+                        channels, and playlists without annoying ads. Dive into
+                        a seamless entertainment experience today!
                     </p>
                 </div>
-
+                {/* 
                 <div className='project'>
                     <a
                         href='https://playrock-paper-scissors.netlify.app/'
@@ -128,9 +168,9 @@ const Portfolio = () => {
                         A rock paper scissors game using javascript and advanced
                         css animations.
                     </p>
-                </div>
+                </div> */}
 
-                <div className='project'>
+                {/* <div className='project'>
                     <a
                         href='https://nimble-baklava-d3673f.netlify.app/'
                         target='_blank'
@@ -168,9 +208,9 @@ const Portfolio = () => {
                         estimate and track how much time it takes me to complete
                         my projects.
                     </p>
-                </div>
+                </div> */}
 
-                <div className='project'>
+                {/* <div className='project'>
                     <a
                         href='https://clipshare12.netlify.app'
                         target='_blank'
@@ -208,7 +248,7 @@ const Portfolio = () => {
                         profile and share videos. The app utilizes NoSQL
                         database (firebase) to store and display user data.
                     </p>
-                </div>
+                </div> */}
 
                 <div className='project'>
                     <a
@@ -244,14 +284,13 @@ const Portfolio = () => {
                         </div>
                     </div>
                     <p className='projectDescription'>
-                        Users can add projects they are working on and list
-                        specific tasks for each project on the list. They can
-                        then see the number of tasks remaining to help them stay
-                        organized and on track for each project.
+                        Stay on top of your projects effortlessly! Add tasks,
+                        track progress, and conquer your to-do list. Your
+                        ultimate project organizer is here!
                     </p>
                 </div>
 
-                <div className='project'>
+                {/* <div className='project'>
                     <a
                         href='https://cerulean-monstera-d7c2c8.netlify.app/'
                         target='_blank'
@@ -289,9 +328,9 @@ const Portfolio = () => {
                         weather report based on city name, app changes
                         background depending on the time in a given location.
                     </p>
-                </div>
+                </div> */}
 
-                <div className='project'>
+                {/* <div className='project'>
                     <a
                         href='https://shoppingcart101.netlify.app'
                         target='_blank'
@@ -329,7 +368,7 @@ const Portfolio = () => {
                         local storage and css. The total cost of items and
                         quantity of items are dynamically updated at checkout.
                     </p>
-                </div>
+                </div> */}
             </div>
         </div>
     );
