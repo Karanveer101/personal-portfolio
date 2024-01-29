@@ -290,6 +290,28 @@ const Portfolio = () => {
                     </p>
                 </div>
 
+                <div className='project'>
+                    <a
+                        href='https://www.figma.com/file/d5MFc4xtOxlouThwJNwlxI/Actuality?type=design&node-id=0%3A1&mode=design&t=HTb1K15RSYzmb8GT-1'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        <img
+                            className='projectImg'
+                            src={require("../images/actuality.png")}
+                            alt='project'
+                        />
+                    </a>
+                    <div className='name'>
+                        <h3>Actuality</h3>
+                    </div>
+                    <p className='projectDescription'>
+                        Enhanced Actuality's online presence with a seamlessly
+                        integrated, visually striking platform prioritizing
+                        user-centric design principles. 
+                    </p>
+                </div>
+
                 {/* <div className='project'>
                     <a
                         href='https://cerulean-monstera-d7c2c8.netlify.app/'
